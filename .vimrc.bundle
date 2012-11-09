@@ -1,5 +1,5 @@
 "vunlde.vimで管理してるpluginを読み込む
-
+let g:neobundle_default_git_protocol='https'
 filetype off
 
 if has('vim_starting')
@@ -43,7 +43,7 @@ call vundle#rc()
   NeoBundle 'Gundo'
 
   " surround.vim : テキストを括弧で囲む／削除する
-  NeoBundle 'tpope/surround.vim'
+  NeoBundle 'tpope/vim-surround'
 
   " smartchr.vim : ==などの前後を整形
   NeoBundle 'smartchr'
@@ -100,8 +100,11 @@ call vundle#rc()
   " 補完 neocomplcache.vim : 究極のVim的補完環境
   NeoBundle 'Shougo/neocomplcache'
 
-  " neocomplcacheのsinpet補完
-  NeoBundle 'Shougo/neocomplcache-snippets-complete'
+"  " neocomplcacheのsinpet補完
+"  NeoBundle 'Shougo/neocomplcache-snippets-complete'
+
+  " 20121026 yamaguchie
+  NeoBundle 'Shougo/neosnippet'
 
   " for rsense
   NeoBundle 'm2ym/rsense'
@@ -235,13 +238,15 @@ call vundle#rc()
   " vimshell : vimのshell
   NeoBundle 'Shougo/vimshell.git'
 
-" " vimproc : vimから非同期実行。vimshelleで必要
-"  NeoBundle 'Shougo/vimproc', {
-"      \ 'build' : {
-"      "\     'mac' : 'make -f make_mac.mak',
-"      \     'mac' : 'make -f make_unix.mak',
-"      \    },
-"      \ }
+ " vimproc : vimから非同期実行。vimshelleで必要
+  NeoBundle 'Shougo/vimproc', {
+      \ 'build' : {
+      \     'mac' : 'make -f make_unix.mak',
+      \    },
+      \ }
+
+  "20121026_yamaguchie added
+"  NeoBundle 'conque'
 
   " vim-altercmd : Ex command拡張
   NeoBundle 'tyru/vim-altercmd'
@@ -279,7 +284,7 @@ call vundle#rc()
   " ステータスラインをカッコよくする
   NeoBundle 'Lokaltog/vim-powerline'
 
-
+"  NeoBundle 'altercation/vim-colors-solarized'
 " }}}
 
 " ColorSchema{{{{
@@ -289,7 +294,13 @@ call vundle#rc()
   NeoBundle 'tomasr/molokai'
   NeoBundle 'yuroyoro/yuroyoro256.vim'
 " }}}
-
+"
+"20121107 yamaguchiadded
+"Bundle 'Trac-Wikimarkup'
+"Bundle 'VimTrac'
+"
+"
+"
 " Unite {{{{
   " unite.vim : - すべてを破壊し、すべてを繋げ - vim scriptで実装されたanythingプラグイン
   NeoBundle 'Shougo/unite.vim'
