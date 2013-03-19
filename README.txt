@@ -8,4 +8,4 @@ ln -s dotfiles/.zshrc ~/.zshrc
 .vim/
 .screenrc
 .zshrc
-
+###test
