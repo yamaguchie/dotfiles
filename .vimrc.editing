@@ -89,3 +89,4 @@ function! s:toggle_qf_window()
 endfunction
 nnoremap <silent> cw :call <SID>toggle_qf_window()<CR>
 
+inoremap <silent> <C-h> <C-g>u<C-h>
