@@ -43,4 +43,5 @@ source ~/dotfiles/.vimrc.plugins_setting
 "let g:solarized_visibility="normal"
 ""let g:solarized_termcolors=256
 "colorschem solarized
+inoremap <silent> <C-h> <C-g>u<C-h>
 "
