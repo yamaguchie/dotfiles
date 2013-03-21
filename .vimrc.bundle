@@ -241,7 +241,7 @@ call vundle#rc()
  " vimproc : vimから非同期実行。vimshelleで必要
   NeoBundle 'Shougo/vimproc', {
       \ 'build' : {
-      \     'mac' : 'make -f make_unix.mak',
+      \     'unix' : 'make -f make_unix.mak',
       \    },
       \ }
 
