@@ -237,6 +237,8 @@ call vundle#rc()
 
   " vimshell : vimのshell
   NeoBundle 'Shougo/vimshell.git'
+" conque
+  NeoBundle 'add20/vim-conque'
 
  " vimproc : vimから非同期実行。vimshelleで必要
   NeoBundle 'Shougo/vimproc', {
@@ -245,8 +247,6 @@ call vundle#rc()
       \    },
       \ }
 
-  "20121026_yamaguchie added
-"  NeoBundle 'conque'
 
   " vim-altercmd : Ex command拡張
   NeoBundle 'tyru/vim-altercmd'
