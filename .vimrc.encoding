@@ -21,7 +21,8 @@ autocmd FileType scala :set fileencoding=utf-8
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
 
 " 指定文字コードで強制的にファイルを開く
-command! Cp932 edit ++enc=cp932
+" 20130325 yama いずれ修正する必要あり！！！
+command! -bang -bar -complete=file -nargs=? Cp932 edit ++enc=cp932  <args>
 command! Eucjp edit ++enc=euc-jp
 command! Iso2022jp edit ++enc=iso-2022-jp
 command! Utf8 edit ++enc=utf-8
