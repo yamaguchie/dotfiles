@@ -284,6 +284,9 @@ call vundle#rc()
   " ステータスラインをカッコよくする
   NeoBundle 'Lokaltog/vim-powerline'
 
+  "help
+  NeoBundle 'vim-jp/vimdoc-ja'
+
 "  NeoBundle 'altercation/vim-colors-solarized'
 " }}}
 
