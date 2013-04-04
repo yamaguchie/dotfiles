@@ -107,8 +107,8 @@ call vundle#rc()
   NeoBundle 'Shougo/neosnippet'
 
   " for rsense
-  NeoBundle 'm2ym/rsense'
-  NeoBundle 'taichouchou2/vim-rsense'
+  " NeoBundle 'm2ym/rsense'
+  " NeoBundle 'taichouchou2/vim-rsense'
 
   " rubyでrequire先を補完する
   " NeoBundle 'ujihisa/neco-ruby'
@@ -205,10 +205,10 @@ call vundle#rc()
   NeoBundle 'yuroyoro/vim-scala'
 
   " clojure
-  Bundle 'jondistad/vimclojure'
+  NeoBundle 'jondistad/vimclojure'
 
   " ghc-mod
-  Bundle 'eagletmt/ghcmod-vim'
+  NeoBundle 'eagletmt/ghcmod-vim'
 
   " syntax checking plugins exist for eruby, haml, html, javascript, php, python, ruby and sass.
   NeoBundle 'scrooloose/syntastic'
@@ -237,6 +237,8 @@ call vundle#rc()
 
   " vimshell : vimのshell
   NeoBundle 'Shougo/vimshell.git'
+" conque
+  NeoBundle 'add20/vim-conque'
 
   " conque
   NeoBundle 'add20/vim-conque'
@@ -244,12 +246,10 @@ call vundle#rc()
  " vimproc : vimから非同期実行。vimshelleで必要
   NeoBundle 'Shougo/vimproc', {
       \ 'build' : {
-      \     'mac' : 'make -f make_unix.mak',
+      \     'unix' : 'make -f make_unix.mak',
       \    },
       \ }
 
-  "20121026_yamaguchie added
-"  NeoBundle 'conque'
 
   " vim-altercmd : Ex command拡張
   NeoBundle 'tyru/vim-altercmd'
@@ -273,7 +273,7 @@ call vundle#rc()
   NeoBundle 'thinca/vim-openbuf'
 
   " vimdoc 日本語
-  NeoBundle 'yuroyoro/vimdoc_ja'
+  "NeoBundle 'yuroyoro/vimdoc_ja'
 
   " vim上のtwitter client
   NeoBundle 'TwitVim'
@@ -287,6 +287,9 @@ call vundle#rc()
   " ステータスラインをカッコよくする
   NeoBundle 'Lokaltog/vim-powerline'
 
+  "help
+  NeoBundle 'vim-jp/vimdoc-ja'
+
 "  NeoBundle 'altercation/vim-colors-solarized'
 " }}}
 
@@ -297,6 +300,8 @@ call vundle#rc()
   NeoBundle 'tomasr/molokai'
   NeoBundle 'yuroyoro/yuroyoro256.vim'
 " }}}
+"20130325 yamaguchiadded
+  NeoBundle 'gmarik/vundle.git'
 "
 "20121107 yamaguchiadded
 "Bundle 'Trac-Wikimarkup'
@@ -314,6 +319,7 @@ call vundle#rc()
   NeoBundle 'thinca/vim-unite-history'
   NeoBundle 'tsukkee/unite-tag'
   NeoBundle 'choplin/unite-vim_hacks'
+  NeoBundle 'ujihisa/unite-colorscheme'
 
 " }}}
 "
