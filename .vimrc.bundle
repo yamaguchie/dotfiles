@@ -318,5 +318,10 @@ call vundle#rc()
 " }}}
 "
 " NeoBundle 'gmarik/vundle'
+"NeoBundle 'trac-wikimarkup'
+NeoBundle 'vim-scripts/VimTrac'
+let g:tracserverlist = {}
+let g:tracserverlist['strac'] = 'http://yamaguchie:yamaguchie@172.26.100.24/projects/hadoop/login/xmlrpc'
+
 
 filetype plugin indent on
