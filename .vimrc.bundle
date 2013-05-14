@@ -145,6 +145,8 @@ call vundle#rc()
   " open-browser.vim : カーソルの下のURLを開くor単語を検索エンジンで検索
   NeoBundle 'tyru/open-browser.vim'
 
+  NeoBundle 'vim-scripts/gtags.vim'
+
 " }}}
 
 " Programming {{{
@@ -304,8 +306,10 @@ call vundle#rc()
   NeoBundle 'gmarik/vundle.git'
 "
 "20121107 yamaguchiadded
-"Bundle 'Trac-Wikimarkup'
-"Bundle 'VimTrac'
+Bundle 'Trac-Wikimarkup'
+Bundle 'VimTrac'
+let g:tracServerList = {}
+let g:tracServerList['trac'] = 'http://yamaguchie:yamaguchie@172.26.100.24/projects/hadoop/login/xmlrpc'
 "
 "
 "
@@ -325,9 +329,9 @@ call vundle#rc()
 "
 " NeoBundle 'gmarik/vundle'
 "NeoBundle 'trac-wikimarkup'
-NeoBundle 'vim-scripts/VimTrac'
-let g:tracserverlist = {}
-let g:tracserverlist['strac'] = 'http://yamaguchie:yamaguchie@172.26.100.24/projects/hadoop/login/xmlrpc'
+"NeoBundle 'vim-scripts/VimTrac'
+"let g:tracserverlist = {}
+"let g:tracserverlist['strac'] = 'http://yamaguchie:yamaguchie@172.26.100.24/projects/hadoop/login/xmlrpc'
 
 
 filetype plugin indent on
