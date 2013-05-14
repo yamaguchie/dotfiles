@@ -307,7 +307,7 @@ call vundle#rc()
 "
 "20121107 yamaguchiadded
 Bundle 'Trac-Wikimarkup'
-Bundle 'VimTrac'
+Bundle 'yamaguchie/VimTrac'
 let g:tracServerList = {}
 let g:tracServerList['trac'] = 'http://yamaguchie:yamaguchie@172.26.100.24/projects/hadoop/login/xmlrpc'
 "
